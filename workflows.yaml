@@ -1,0 +1,61 @@
+comment: 'Работа с таблицами'
+main_tasks:
+  - comment: 'Создание таблиц, наполнение таблиц, выполнение запросов'
+    subtasks:
+       - type: 'complex_sql'
+         file_location: './project/sql/ddl_scripts.sql'
+       - type: 'complex_sql'
+         file_location: './project/sql/inserts.sql'
+  - comment: '1) Узнать среднюю стоимость товаров производителя Xiaomi по подкатегориям, вывести по увеличению средней стоимости'
+    subtasks:
+       - type: 'complex_sql'
+         file_location: './project/sql/func1.sql'
+  - comment: '2) В зависмости от поддкатегории узнать максимальную стоимость товара, вывести его название
+при этом цена не должна превосходить 50000 (к примеру миллионером выбирается дорогой подарок, но бюджет всё же ограничен) '
+    subtasks:
+       - type: 'complex_sql'
+         file_location: './project/sql/func2.sql'
+  - comment: '3) Пронумеровать уникальные пары {maker, subcategory_id} (т.е. указать подкатегорию, которая производится одним лишь производителем), упорядочив производителей в алфавитном порядке. Если же производитель производит и другие подкатегории, указать их ниже 
+уникальной пары с пропуском имени производителя(производитель выводится только в первой строке).'
+    subtasks:
+       - type: 'complex_sql'
+         file_location: './project/sql/func3.sql'
+  - comment: '4) Вывести покупателей и число их заказов, если заказов нет-указать нулевое значение  '
+    subtasks:
+       - type: 'complex_sql'
+         file_location: './project/sql/func4.sql'
+  - comment: '5) Сортировав по дате вывести из таблицы заказов суммы заказов, кроме двух самых высоких сумм и двух саммых низких'
+    subtasks:
+       - type: 'complex_sql'
+         file_location: './project/sql/func5.sql'
+  - comment: '6) Пронумеровать строки из таблицы с товарами в порядке - имя производителя в порядке убывания числа его продукции, если число продукции одинаковое, то выводить в алфавитном порядке, артикул товара выводить по возрастанию'
+    subtasks:
+       - type: 'complex_sql'
+         file_location: './project/sql/func6.sql'
+
+   
+  - comment: ' 1) Представление, в котором отображается город и число заказов по пунктам выдачи '
+    subtasks:
+       - type: 'complex_sql'
+         file_location: './project/sql/view1.sql'
+  - comment: ' 2) Представление, в котором отображаются отсутствующие товары, их наименование и категория '
+    subtasks:
+       - type: 'complex_sql'
+         file_location: './project/sql/view2.sql'
+  - comment: ' 3) Представление, в котором отображается минимальная рассрочка в зависимости от подкатегории товаров в алфавитном порядке подкатегорий'
+    subtasks:
+       - type: 'complex_sql'
+         file_location: './project/sql/view3.sql'
+  - comment: ' 4) Отобразить цену и характеристики пылесосов, которые в наличии'
+    subtasks:
+       - type: 'complex_sql'
+         file_location: './project/sql/view4.sql'
+  - comment: ' 5) Замаскировав артикулы, отобразить таблицу с данными о товарах'
+    subtasks:
+       - type: 'complex_sql'
+         file_location: './project/sql/view5.sql'
+  - comment: ' 6) Замаскировав адреса, отобразить таблицу с данными о пунктах выдачи'
+    subtasks:
+       - type: 'complex_sql'
+         file_location: './project/sql/view6.sql'
+
